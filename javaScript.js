@@ -20,6 +20,10 @@ handleSlider();
 function handleSlider() {
     inputSlide.value = passwordLength;
     passLength.innerText = passwordLength;
+    const min = inputSlide.min;
+    const max = inputSlide.max;
+
+    inputSlide.style.backgroundSize = ((passwordLength-min)*100/(max-min)) + "% 100%";
 }
 
 function getRandomInteger(min, max) {
