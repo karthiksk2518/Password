@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+
+        <div class="password">
+            <input readonly placeholder="Password" class="display">
+            <button id="copy">
+                <div class="copy-container">
+                    <span class="material-icons">content_copy</span>
+                    <span class="copy-password"></span>
+                </div>
+            </button>
+            
+        </div>
+
+        <div class="input">
+            <!-- password length -->
+            <div class="length check">
+                <p>Password Length</p>
+                <p class="l-value">0</p>
+            </div>
+
+            <!-- slider -->
+            <input type="range" min="1" max="20" value="8" class="slide" step="1">
+
+            <!-- checkbox -->
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div><input type="checkbox" id="u-switch" />
+                    <label for="u-switch">
+                        </label>
+                    </div>
+                    <span>Include Uppercase</span>
+                </div>
+                <div class="toggle">
+                    <div>
+                        <input type="checkbox" id="l-switch" />
+                        <label for="l-switch"></label>
+                    </div>
+                    <span>Include Lowercase</span>
+                </div>
+                <div class="toggle">
+                    <div>
+                        <input type="checkbox" id="n-switch" />
+                        <label for="n-switch"></label>
+                    </div>
+                    <span>Include Number</span>
+                </div>
+                <div class="toggle">
+                    <div>
+                        <input type="checkbox" id="s-switch" />
+                        <label for="s-switch"></label>
+                    </div>
+                    <span>Include Symbol</span>
+                </div>
+            </div>
+
+            <button class="gen-btn">Generate Password</button>
+        </div>
+    </div>
+
+    <script src="javaScript.js"></script>
+</body>
+</html>

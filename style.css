@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.password {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.display {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 3px 3px 6px black;
+}
+
+.material-icons {
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    box-shadow: 3px 3px 6px black;
+}
+
+.copy-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.copy-password{
+    position: absolute;
+    left: 30px;
+    top: -10px;
+    color: grey;
+    font-size: 16px;
+    display: none;
+}
+
+.copy-password.active {
+    display: inline-block;
+}
+
+.input {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.slide {
+    width: 100%;
+}
+
+.toggle-container {
+    margin-top: 20px;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.toggle input[type="checkbox"] {
+    display: none;
+}
+
+.toggle label {
+    display: block;
+    width: 30px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle label:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #333;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.toggle input[type="checkbox"]:checked + label {
+    background-color: #4caf50;
+}
+
+.toggle input[type="checkbox"]:checked + label:after {
+    left: 15px;
+}
+
+.toggle span{
+    padding-left: 10px;
+}
+
+.gen-btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 3px 3px 6px black;
+    transition: background-color 0.3s;
+}
+
+.gen-btn:hover {
+    background-color: grey;
+}
